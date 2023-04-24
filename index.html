@@ -2,15 +2,22 @@
 <html lang="en">
 <head>
     <!-- Document Metadata-->
+    <link rel = "stylesheet" href ="mystyle.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> The Daily Drip's Meeting Minutes </title>
     <link rel = "icon" href="screenshots/favicon2.ico">
+    
+    <style>
+        body {
+            background-color: #f8edeb; 
+        }
+    </style>
 </head>
 <body>
     <!-- Content Sectioning -->
-    <nav class = "menu"> 
+    <nav class = "menu">
         <ul> 
             <li><a href="#">Introduction</a></li>
             <li><a href="#">Attendence List</a></li> 
@@ -22,16 +29,16 @@
         </ul>
     </nav>
 
-    <header> 
-        <h1 style> The Daily Drip Coffee Shop Meeting </h1>
+    <header class = "h"> 
+        <h1 style = "color:#ccd5ae"> The Daily Drip Coffee Shop Meeting </h1>
         <h2> Brainstorming Spring Menu  </h2>
         <h3> 04.12.2023 </h3>
     </header>
 
     <main>
-        <section>
-            <h2>Introduction</h2>
+        <section> 
             <div class = "introduction">
+                <h2>Introduction</h2>
                 <p>
                     Welcome to <strong> The Daily Drip </strong>'s weekly faculty meeting mintues! <br>The Daily Drip is a famous coffee shop local to Carlsbad, California. 
                     This website is dedicated to a particular meeting our faculty recently had about brainstorming our <em>Spring</em> menu. 
@@ -44,7 +51,7 @@
                     <span class = "about">30-second video recording </span>.  
                 </p>
 
-                <details> 
+                <details style="color:black;"> 
                     <summary> Meeting Style Details</summary>
                     This is a super fun meeting style our cafe faculty does every new season! 
                 </details>
@@ -55,7 +62,7 @@
         
         <section>
             <h2> Attendence List </h2>
-            <div class = "Attendees">
+            <div class = "Attendees" style="color:black;">
                <ol>
                 <li> Helena Hundhausen </li>
                 <li> Gisella Miraflor </li>
@@ -90,7 +97,7 @@
             <h2> Notes </h2>
             <div class = "Notes">
                 <h3> Unfinished Business </h3> 
-                <div class = "Unfinished Business">
+                <div class = "Unfinished-Business">
                     <p> The <strong> Daily Drip</strong>'s faculty meeting had unfinished items that are priority to complete next meeting. In no particular order, each is listed here: </p>
                     <ul>
                         <li> Full cost of the Spring Menu. </li>
@@ -100,7 +107,7 @@
                     </ul>
                 </div>
                 <h3> New Business </h3> 
-                <div class = "Finished Business">
+                <div class = "Finished-Business">
                     <p> The <strong> Daily Drip</strong>'s faculty meeting had a lot of finished items from the meeting. In no particular order, each is listed here: </p>
                     <ul> 
                         <li> Reviewed the asthetic for the coffee shop's Spring Menu. </li>
@@ -119,7 +126,7 @@
         <section> 
             <h2> Questions & Concerns </h2>
             <p> Here are the <b class = "term">concerns</b> and <b class = "term">questions</b> that came up from the meeting: </p>
-            <div class = "Questions & Concerns">
+            <div class = "Questions-Concerns">
                 <ul> 
                     <li> <i> How much money can our coffee shop allocate to all new beverages & food options? </i> </li>
                     <li> <i> How easy will it be to source the ingredients for each item? </i></li>
@@ -129,14 +136,21 @@
             </div>
         </section>
 
+        <hr> 
+
         <!-- Images and multimedia -->
         <section> 
             <h2> Images & Video Recording </h2> 
             <h3> Spring Menu Inspiration Images</h3>
             <!-- add the images -->
-            <img src="images/c.jpg" alt = "single toast" width = "340" height ="350"> <img src = "images/toast3.jpg" alt = "2 toast" width ="340" height = "350"> <img src = "images/3.jpg" alt = "coffee" width ="330" height = "350"> <img src = "images/coffee.jpg" alt = "coffee" width ="330" height = "350">  
+            <div class = "images">
+                <img src="images/c.jpg" alt = "single toast" width = "340" height ="350"> 
+                <img src = "images/toast3.jpg" alt = "2 toast" width ="340" height = "350"> 
+                <img src = "images/3.jpg" alt = "coffee" width ="330" height = "350"> 
+                <img src = "images/coffee.jpg" alt = "coffee" width ="330" height = "350">  
+            </div>
             <!-- add the audio recording -->
-            <figure>
+            <figure class = "audio">
                 <figcaption>Listen in on the meeting: </figcaption>
                 <audio controls src = "meeting_recording.m4a">
                     <a href ="meeting_recording.m4a"> Download audio </a>
@@ -144,29 +158,62 @@
             </figure>
 
             <!-- add a video recording of the meeting -->
-            <p> Click the video to get a preview of the meeting! </p>
-            <video controls width="250">
-                <source src = "meeting_video.mp4" type="video/mp4">
-                <p>
-                    Also Here is a <a href = "meeting_recording.mp4">link to the video</a>! 
-                </p>
-            </video>
+            <div class="video"> 
+                <p> Click the video to get a preview of the meeting! </p>
+                <video controls width="250" class="v">
+                    <source src = "meeting_video.mp4" type="video/mp4">
+                    <p>
+                        Also Here is a <a href = "meeting_recording.mp4">link to the video</a>! 
+                    </p>
+                </video>
+            </div>
 
-        </section>
+        </section> 
 
         <!--Inline text semantics-->
         <section>
-            <h2> Contacts</h2>
-            <p> You can reach Helena Hundhausen for more information about the meeting and this page at: </p>
-            <ul>
-                <li> <a href = "mailto:hhundhausen@ucsd.edu">Email</a> </li>
-            </ul>
+            <div class = "contacts">
+                <h2> Contacts</h2>
+                <p> You can reach Helena Hundhausen for more information about the meeting and this page at: </p>
+                <ul>
+                    <li> <a href = "mailto:hhundhausen@ucsd.edu">Email</a> </li>
+                </ul>
+            </div>
         </section>
 
-        <!--Form-->
+        <br> 
+
+        <!-- Flexbox--> 
         <section> 
-            <h2> Form </h2>
-            <form  method="get" class="form">
+            <div id = "parent">
+                <div class = "cof">
+                    <p> Contact One</p>
+                </div>
+                <div class = "mat">
+                    <p> Contact Two </p>
+                </div>
+                <div class ="lat">
+                    <p> Contact Three </p>
+                </div>
+            </div>
+        </section>
+
+        <br>
+
+        <!-- Media-->
+        <section>
+            <div class="med">
+                <p class="help"> Please consider taking the form below! </p>
+            </div>
+        </section>
+
+        <!--Form--> 
+        <section> 
+            <div class="formTitle">
+                <h2> Form </h2>
+                <p> Provide some insight! </p>
+            </div> 
+            <form  method="get" class="form2">
                  <div class="form">
                     <label for="name">Enter your name: </label>
                     <input type="text" name = "name" id="name" required> 
@@ -257,11 +304,28 @@
 
                 </div>
             </form>
+        </section> 
+ 
+
+          <!-- Grid-->
+        <section>
+            <div class ="gridParent">
+                <div class = "one"> 
+                    <p>Thank</p>
+                </div>
+                <div class = "two">
+                    <p>You</p>
+                </div>
+                <div class = "three">
+                    <p>Viewer!</p>
+                </div>
+            </div>
         </section>
+        <br>
         
     </main>
 
-    <footer> 
+    <footer class = "foot"> 
         <h3>@2023 Helena Hundhausen</h3>
     </footer>
 </body>
