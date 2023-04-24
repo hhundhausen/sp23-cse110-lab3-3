@@ -1,9 +1,3 @@
---- 
-meeting title : <insert here>
-date : <month - day - year>
-time : <start time - end time>
----
-
 # Standup Meeting Notes Template 
 [insert meeting date]
 
